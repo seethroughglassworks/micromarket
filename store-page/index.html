@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MicroMarket Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&family=Red+Hat+Text:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo">
+    <div class="logo-icon">m</div>
+    <div class="logo-text">
+      micro<br><span>market</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#">Buy</a></li>
+    <li><a href="#">Sell</a></li>
+    <li><a href="#" class="has-arrow">My Account</a></li>
+    <li><a href="#">Sign Up / Login</a></li>
+    <li><a href="#" class="btn-contact">Contact Us</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-label">Current Stock</div>
+  <h1>Verified ingredients from verified sources.</h1>
+  <p>Every listing is from an FDA-licensed operation or licensed feed mill.<br>All ingredients are reviewed and approved before going live.</p>
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">142</div>
+      <div class="stat-label">Active Listings</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">38</div>
+      <div class="stat-label">Verified sellers</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">15</div>
+      <div class="stat-label">Auctions ending today</div>
+    </div>
+    <button class="btn-learn">Learn more</button>
+  </div>
+</section>
+
+<!-- PAGE BODY -->
+<div class="page-body">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <!-- Listing Type -->
+    <div class="filter-group">
+      <div class="filter-label">Listing Type</div>
+      <div class="filter-item">
+        <label><input type="checkbox" checked /> All Listings</label>
+        <span class="filter-count">142</span>
+      </div>
+      <div class="filter-item">
+        <label><input type="checkbox" /> Auctions</label>
+        <span class="filter-count">115</span>
+      </div>
+      <div class="filter-item">
+        <label><input type="checkbox" /> Fixed price</label>
+        <span class="filter-count">27</span>
+      </div>
+    </div>
+
+    <div class="filter-divider"></div>
+
+    <!-- Price Range -->
+    <div class="filter-group">
+      <div class="filter-label">Price Range</div>
+      <div class="price-row">
+        <input class="price-input" type="text" placeholder="$ Min" />
+        <input class="price-input" type="text" placeholder="$ Max" />
+      </div>
+      <button class="btn-apply">Apply</button>
+      <button class="btn-clear">Clear filters</button>
+    </div>
+
+    <div class="filter-divider"></div>
+
+    <!-- Seller State -->
+    <div class="filter-group">
+      <div class="filter-label">Seller State</div>
+      <div class="filter-item">
+        <label><input type="checkbox" /> Texas</label>
+        <span class="filter-count">42</span>
+      </div>
+      <div class="filter-item">
+        <label><input type="checkbox" /> Iowa</label>
+        <span class="filter-count">29</span>
+      </div>
+      <div class="filter-item">
+        <label><input type="checkbox" /> Kansas</label>
+        <span class="filter-count">19</span>
+      </div>
+      <div class="filter-item">
+        <label><input type="checkbox" /> Nebraska</label>
+        <span class="filter-count">17</span>
+      </div>
+      <div class="filter-item">
+        <label><input type="checkbox" /> Minnesota</label>
+        <span class="filter-count">14</span>
+      </div>
+      <div class="filter-item">
+        <label><input type="checkbox" /> California</label>
+        <span class="filter-count">12</span>
+      </div>
+      <div class="filter-item">
+        <label><input type="checkbox" /> Washington</label>
+        <span class="filter-count">9</span>
+      </div>
+    </div>
+
+    <div class="filter-divider"></div>
+
+    <!-- Unit of Measure -->
+    <div class="filter-group">
+      <div class="filter-label">Unit of Measure</div>
+      <div class="filter-item">
+        <label><input type="checkbox" /> Pounds</label>
+        <span class="filter-count">52</span>
+      </div>
+      <div class="filter-item">
+        <label><input type="checkbox" /> Kilograms</label>
+        <span class="filter-count">34</span>
+      </div>
+      <div class="filter-item">
+        <label><input type="checkbox" /> Grand</label>
+        <span class="filter-count">27</span>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- Results bar -->
+    <div class="results-bar">
+      <div class="results-count">Showing 142 listings</div>
+      <div class="search-bar">
+        <input class="search-input" type="text" placeholder="Search" />
+        <select class="sort-select">
+          <option>Sort by</option>
+          <option>Price: Low–High</option>
+          <option>Price: High–Low</option>
+          <option>Ending Soon</option>
+          <option>Newest</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Filter pills -->
+    <div class="filter-pills">
+      <div class="pill active">All listings ✕</div>
+    </div>
+
+    <!-- Featured card -->
+    <div class="featured-card">
+      <div>
+        <div class="featured-badge">Featured Listing</div>
+        <div class="featured-name">Lysine-L 98.5% – Grade A</div>
+        <div class="featured-seller">Lone Star Grain Co. &nbsp;·&nbsp; Amarillo, TX</div>
+        <div class="featured-actions">
+          <button class="btn-watchlist">Add to Watchlist</button>
+          <button class="btn-bid">Place Bid</button>
+        </div>
+      </div>
+      <div class="featured-price-block">
+        <div class="featured-price">$0.50</div>
+        <div class="featured-unit">per pound</div>
+      </div>
+    </div>
+
+    <!-- Product grid -->
+    <div class="product-grid">
+
+      <!-- Card 1 -->
+      <div class="product-card">
+        <div class="card-img-wrap">
+          <div class="img-placeholder img-bag">🛍️</div>
+          <div class="auction-tag">● Auction</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Product</div>
+          <div class="card-seller">General Feed Co.</div>
+          <div class="card-location">Lovelan, USA</div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-key">Wt:</span>
+              <span class="meta-val">55lbs</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-key">Pkg:</span>
+              <span class="meta-val">Bulk</span>
+            </div>
+          </div>
+          <div class="card-price">$100.00 <span>/ lb</span></div>
+          <div class="card-actions">
+            <button class="btn-bid-sm">Bid Now</button>
+            <button class="btn-watchlist-sm">Add to Watchlist</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="product-card">
+        <div class="card-img-wrap">
+          <div class="img-placeholder img-bag">🌾</div>
+          <div class="auction-tag">● Auction</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Product</div>
+          <div class="card-seller">General Feed Co.</div>
+          <div class="card-location">Lovelan, USA</div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-key">Wt:</span>
+              <span class="meta-val">55lbs</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-key">Pkg:</span>
+              <span class="meta-val">Bulk</span>
+            </div>
+          </div>
+          <div class="card-price">$100.00 <span>/ lb</span></div>
+          <div class="card-actions">
+            <button class="btn-bid-sm">Bid Now</button>
+            <button class="btn-watchlist-sm">Add to Watchlist</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="product-card">
+        <div class="card-img-wrap">
+          <div class="img-placeholder img-bag">📦</div>
+          <div class="auction-tag">● Auction</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Product</div>
+          <div class="card-seller">General Feed Co.</div>
+          <div class="card-location">Lovelan, USA</div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-key">Wt:</span>
+              <span class="meta-val">100lbs</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-key">Pkg:</span>
+              <span class="meta-val">Bulk</span>
+            </div>
+          </div>
+          <div class="card-price">$100.00 <span>/ lb</span></div>
+          <div class="card-actions">
+            <button class="btn-bid-sm">Bid Now</button>
+            <button class="btn-watchlist-sm">Add to Watchlist</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="product-card">
+        <div class="card-img-wrap">
+          <div class="img-placeholder img-bag">🌿</div>
+          <div class="auction-tag">● Auction</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Product</div>
+          <div class="card-seller">General Feed Co.</div>
+          <div class="card-location">Lovelan, USA</div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-key">Wt:</span>
+              <span class="meta-val">55lbs</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-key">Pkg:</span>
+              <span class="meta-val">Bulk</span>
+            </div>
+          </div>
+          <div class="card-price">$100.00 <span>/ lb</span></div>
+          <div class="card-actions">
+            <button class="btn-bid-sm">Bid Now</button>
+            <button class="btn-watchlist-sm">Add to Watchlist</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="product-card">
+        <div class="card-img-wrap">
+          <div class="img-placeholder img-bag">🧪</div>
+          <div class="auction-tag">● Auction</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Product</div>
+          <div class="card-seller">General Feed Co.</div>
+          <div class="card-location">Lovelan, USA</div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-key">Wt:</span>
+              <span class="meta-val">55lbs</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-key">Pkg:</span>
+              <span class="meta-val">Bulk</span>
+            </div>
+          </div>
+          <div class="card-price">$100.00 <span>/ lb</span></div>
+          <div class="card-actions">
+            <button class="btn-bid-sm">Bid Now</button>
+            <button class="btn-watchlist-sm">Add to Watchlist</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="product-card">
+        <div class="card-img-wrap">
+          <div class="img-placeholder img-bag">⚗️</div>
+          <div class="auction-tag">● Auction</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Product</div>
+          <div class="card-seller">General Feed Co.</div>
+          <div class="card-location">Lovelan, USA</div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-key">Wt:</span>
+              <span class="meta-val">100lbs</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-key">Pkg:</span>
+              <span class="meta-val">Bulk</span>
+            </div>
+          </div>
+          <div class="card-price">$100.00 <span>/ lb</span></div>
+          <div class="card-actions">
+            <button class="btn-bid-sm">Bid Now</button>
+            <button class="btn-watchlist-sm">Add to Watchlist</button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /grid -->
+
+    <div class="return-top">
+      <a href="#">↑ Return to Top</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-logo">
+      <div class="footer-logo-icon">m</div>
+      <div class="footer-logo-text">
+        micro<br><span>market</span>
+      </div>
+    </div>
+    <div class="footer-icons">
+      <a href="#" class="footer-icon" title="Email">✉</a>
+      <a href="#" class="footer-icon" title="Facebook">f</a>
+    </div>
+  </div>
+
+  <div class="footer-links">
+    <a href="#" class="footer-link">Link 1</a>
+    <a href="#" class="footer-link">Link 2</a>
+    <a href="#" class="footer-link">Link 3</a>
+    <a href="#" class="footer-link">Link 1</a>
+    <a href="#" class="footer-link">Link 2</a>
+    <a href="#" class="footer-link">Link 3</a>
+    <a href="#" class="footer-link">Link 1</a>
+    <a href="#" class="footer-link">Link 2</a>
+    <a href="#" class="footer-link">Link 3</a>
+  </div>
+
+  <div class="footer-copy">© 2024 CompanyName Inc.</div>
+</footer>
+
+</body>
+</html>
