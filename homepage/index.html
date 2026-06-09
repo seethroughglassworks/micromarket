@@ -5,19 +5,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MicroMarket</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+        @font-face {
+            font-family: 'Onest', sans sans-serif;
+            src: url(../fonts/Onest/Onest-VariableFont_wght.ttf);
+        }
+
+        @font-face {
+            font-family: 'Red Hat Text', sans sans-serif;
+            src: url(../fonts/Red_Hat_Text/RedHatText-VariableFont_wght.ttf);
+        }
+    </style>
 </head>
 <body>
   
   <!-- nav -->
    <nav>
     <div class="nav-content">
-      <div class="nav-logo"></div>
+      <img src="./img/small-logo.png" alt="Small yellow MicroMarket logo.">
       <div class="nav-right">
-        <div class="nav-links"></div>
+        <div class="nav-links">
+          <ul>
+            <li>Buy</li>
+            <li>Sell</li>
+            <li>About Us</li>
+            <li>Login/My Account</li>
+          </ul>
+        </div>
         <button class="contact-button">Contact Us</button>
       </div>
     </div>
    </nav>
+
+   <!-- Hero -->
+    <section class="hero">
+      <img src="./img/ag-warehouse.jpg" alt="Photo of the inside of a large agricultural warehouse. Lots of rows of stacked canvas bags.">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>A Simple Solution for your Ag Business</h1>
+          <h3>Connecting unicorn ingredient havers to unicorn ingredient needers.</h3>
+          <button class="info-button">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Cards -->
+     <section class="info">
+      <div class="info-grid">
+        
+        <div class="card-content">
+          <div class="card-left">
+            <div class="card-text">
+              <h2>How It Works</h2>
+              <h3>In four easy steps you can have your product listed for buyers across the US. MicroMarket charges a monthly subsciption and a small listing fee once your product sells.</h3>
+              <button class="about-button">About Us</button>
+            </div>
+            <div class="card-right">
+              <img src="./img/Hay-Missouri.webp" alt="Hay bale in the forefront of a green field.">
+            </div>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <div class="card-left">
+            <img src="./img/Grain.jpg" alt="Hands holding unprocessed grain in front of a bag full of grain.">
+          </div>
+            <div class="card-right">
+              <div class="card-text">
+                <h2>Commitment to Quality</h2>
+                <h3>Every listing includes a spec sheet, SDS, and certificate of analysis so buyers know exactly what they're getting. Quantities, packaging type, and pickup or freight details are all handled directly between buyer and seller.</h3>
+                <button class="shop-button">In Stock</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-content">
+          <div class="card-left">
+            <div class="card-text">
+              <h2>Selling Requirements</h2>
+              <h3>To buy or sell on Micro Market, your operation must hold a valid FDA registration, an active state feed license, and a physical facility - no brokers or traders allowed. Every account and listing is manually reviewed before going live.</h3>
+              <button class="info-button">Selling Info</button>
+            </div>
+            <div class="card-right">
+              <img src="./img//Cattle-feedlot-south-africa-beef-industry.webp" alt="Cattle eating at a large, outoor trough.">
+            </div>
+          </div>
+        </div>
+        
+        </div>
+     </section>
+
+     <!-- Featured Stock -->
+      <section class="featured-stock">
+
+      </section>
+
+     <!-- Footer -->
+      <footer>
+        
+      </footer>
 
 </body>
 </html>
